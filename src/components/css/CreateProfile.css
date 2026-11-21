@@ -1,0 +1,130 @@
+
+.create-profile-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #eef5ff, #f8fbff);
+    font-family: Arial, sans-serif;
+}
+
+.create-profile-card {
+    width: 100%;
+    max-width: 460px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(30, 64, 175, 0.10);
+}
+
+.profile-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f1ff;
+    color: #2563eb;
+    font-size: 28px;
+}
+
+.create-profile-card h2 {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #172554;
+    font-size: 27px;
+}
+
+.profile-subtitle {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.create-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.create-profile-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.create-profile-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    border: 1px solid #dbe3ef;
+    border-radius: 9px;
+    outline: none;
+    color: #1e293b;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.create-profile-form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.create-profile-form input[readonly] {
+    background: #f1f5f9;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+.create-profile-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.create-profile-button:hover {
+    background: #1d4ed8;
+}
+
+.create-profile-button:disabled {
+    background: #93b4f5;
+    cursor: not-allowed;
+}
+
+.create-profile-error {
+    color: #dc2626;
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+}
+
+.profile-footer {
+    margin-top: 24px;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .create-profile-card {
+        padding: 28px 22px;
+    }
+
+    .create-profile-card h2 {
+        font-size: 23px;
+    }
+}
